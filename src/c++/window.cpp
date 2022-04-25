@@ -113,7 +113,7 @@ Napi::Object Window::Init(Napi::Env env, Napi::Object exports) {
 
   exports.Set("Window", func);
 
-  env.SetInstanceData<Napi::FunctionReference>(&constructor);
+  //env.SetInstanceData<Napi::FunctionReference>(&constructor);
 
   return exports;
 }
